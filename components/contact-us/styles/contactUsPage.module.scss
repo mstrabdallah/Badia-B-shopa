@@ -1,0 +1,112 @@
+@import 'variables';
+
+
+.contactUsPage :global {
+  margin-bottom: 60px;
+
+  .contactUsPageHeader {
+    width: max-content;
+    margin: auto;
+    position: relative;
+    margin-top: 150px;
+
+    h1 {
+      font-size: 30px;
+      line-height: 75px;
+      text-align: center;
+      color: $c-f-p;
+      font-weight: 700;
+
+      &::after {
+        content: "";
+        background: url(/images/wave/ConnectWithTeamIcon.png) no-repeat;
+        width: 55px;
+        height: 78px;
+        position: absolute;
+        background-size: 100% 100%;
+        right: -30px;
+        top: -30px;
+      }
+
+      &:lang(ar) {
+        &::after {
+          right: auto;
+          left: -30px;
+        }
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      margin-bottom: 15px;
+
+      span {
+        color: $c-p;
+        font-weight: bold !important;
+      }
+    }
+  }
+
+  .formContent {
+    max-width: 950px;
+    margin: auto;
+    margin-top: 70px;
+
+    input {
+      height: 55px;
+      border: 1px solid $c-p;
+    }
+
+    textarea {
+      border: 1px solid $c-p;
+    }
+
+    .btnSend {
+      margin: auto;
+
+      button {
+        width: 200px;
+        height: 50px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .msgContentUS {
+    min-height: 300px;
+    border: 1px solid $c-p;
+    color: $c-p;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    .sendAnother{
+      margin: 5px;
+      border-radius: 5px;
+      color: #949494;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+
+
+  @media (max-width:560px) {
+    .contactUsPageHeader {
+      max-width: 100%;
+      text-align: center;
+
+      margin-top: 80px;
+
+      h1 {
+
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+}

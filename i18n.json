@@ -1,0 +1,10 @@
+{
+  "locales": ["ar", "en"],
+  "defaultLocale": "ar",
+  "localeDetection": false,
+  "keySeparator": ":",
+
+  "pages": {
+    "*": ["common", "validate"]
+  }
+}

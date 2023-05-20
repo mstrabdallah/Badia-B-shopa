@@ -1,0 +1,48 @@
+@import 'variables';
+
+
+.packagesPage :global {
+
+
+  .sectionContent {
+    position: relative;
+    margin-bottom: 200px;
+
+    &::after {
+      content: "";
+      background: url(/images/wave/ServicesSupport2.png) no-repeat;
+      width: 286px;
+      height: 152px;
+      position: absolute;
+      background-size: 100% 100%;
+      right: 0px;
+      bottom: -165px;
+
+    }
+
+    
+  }
+
+  @media (max-width:1111px) {
+
+    .PaymentPackages {
+      .sectionsHeader {
+        &::before {
+          width: 190px;
+          height: 155px;
+        }
+      }
+    }
+  }
+
+  @media (max-width:991px) {
+
+    .PaymentPackages {
+      .sectionsHeader {
+        &::before {
+          content: none;
+        }
+      }
+    }
+  }
+}

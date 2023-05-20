@@ -1,0 +1,102 @@
+@import 'variables';
+
+.modalLogin {
+  max-width: 971px;
+  width: 100% !important;
+  margin: auto;
+  padding: 20px;
+
+  .ant-modal-close {
+    position: absolute;
+    right: 0px;
+    width: max-content;
+    margin: 13px;
+
+    svg {
+      font-size: 20px;
+    }
+  }
+
+  .ant-modal-content {
+    background: none !important;
+    box-shadow: none;
+  }
+
+  .ant-modal-body {
+    background: $c-p;
+    padding: 0px;
+    min-height: 300px;
+    border-radius: 20px;
+
+    .email {
+      .ant-input-affix-wrapper {
+        direction: rtl;
+
+        input {
+          direction: ltr;
+        }
+
+        &:lang(ar) {
+          direction: ltr;
+
+          input {
+            direction: rtl;
+          }
+        }
+
+        svg {
+          color: $c-f-s;
+        }
+      }
+    }
+  }
+
+  .modalS1_form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+
+    height: 100%;
+
+    .modalS1_header {
+      text-align: center;
+      margin-top: 70px;
+
+      h2 {
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 33px;
+        margin-top: 17px;
+      }
+    }
+
+    form {
+      margin-top: 40px;
+      margin-bottom: 30px;
+
+      .ButtonsS1 {
+        button {
+          height: 45px;
+          width: 245px;
+          margin-top: 29px;
+        }
+      }
+
+      .forget {
+        text-align: center;
+        margin: auto;
+        margin-top: 23px;
+        cursor: pointer;
+        font-weight: bold;
+        color: $c-f-p;
+      }
+    }
+  }
+
+  .modalS1_Des {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+}

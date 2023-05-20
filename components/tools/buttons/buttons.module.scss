@@ -1,0 +1,40 @@
+@import 'variables';
+
+.ButtonsS1,
+.ButtonsS2 {
+  button {
+    background: $c-p;
+    box-shadow: none;
+    border: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    border: 1px solid $c-p;
+    font-weight: 400;
+    font-size: 18px;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    svg {
+      margin: 0px 10px;
+    }
+  }
+}
+
+.ButtonsS2 :global {
+  button {
+    border-radius: 30px;
+  }
+
+  .noBg {
+    background: none !important;
+    color: $c-p;
+  }
+}

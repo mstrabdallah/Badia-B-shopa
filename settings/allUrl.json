@@ -1,0 +1,9 @@
+{
+  "apiUrl": "https://manager.bshopa.com/api/v1",
+  "dashboard": "https://tenant.bshopa.com",
+  "setCookieDomain": null,
+  "UnAuthorizationRedirectUr": "",
+  "imagesUrl": ["manager.bshopa.com"],
+
+  "---": "-setCookieDomain: .bshopa.com,--"
+}

@@ -1,0 +1,84 @@
+@import 'variables';
+
+
+.RegisterServiceProvider :global {
+  margin-bottom: 60px;
+
+  .contactUsPageHeader {
+    width: max-content;
+    margin: auto;
+    position: relative;
+    margin-top: 150px;
+
+    h1 {
+      font-size: 30px;
+      line-height: 75px;
+      text-align: center;
+      color: $c-f-p;
+      font-weight: 700;
+
+      &::after {
+        content: "";
+        background: url(/images/wave/ConnectWithTeamIcon.png) no-repeat;
+        width: 55px;
+        height: 78px;
+        position: absolute;
+        background-size: 100% 100%;
+        left: -30px;
+        top: -30px;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      margin-bottom: 15px;
+
+      span {
+        color: $c-p;
+        font-weight: bold !important;
+      }
+    }
+  }
+
+  .formContent {
+    max-width: 950px;
+    margin: auto;
+    margin-top: 70px;
+
+    .input {
+      margin-top: 10px;
+    }
+
+    input {
+      height: 55px;
+      border: 1px solid $c-p;
+    }
+
+    .ant-input-affix-wrapper {
+      height: 55px;
+      border: 1px solid $c-p;
+
+      input {
+        height: 50px;
+
+      }
+    }
+
+    textarea {
+      border: 1px solid $c-p;
+    }
+
+    .btnSend {
+      margin: auto;
+      margin-top: 40px;
+
+      button {
+        width: 350px;
+        height: 50px;
+        font-weight: bold;
+      }
+    }
+  }
+
+}

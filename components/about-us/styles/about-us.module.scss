@@ -1,0 +1,248 @@
+@import 'variables';
+
+
+.aboutUsPage :global {
+    margin-bottom: 40px;
+
+    .secSetting {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .sectionDes {
+
+        text-align: center;
+
+
+        margin-top: 70px;
+
+        h2 {
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 60px;
+        }
+
+        h1 {
+            color: $c-f-s;
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .sectionComponents {
+        margin-top: 70px;
+
+        h3 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 60px;
+            color: $c-p;
+        }
+
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+                margin-top: 30px;
+
+                span {
+                    font-size: 16px;
+                    padding: 0px 20px;
+                }
+            }
+        }
+
+        .icons {
+            background: #F2F2F2;
+            padding: 11px;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+
+
+    .sectionAboutDes {
+        background: rgba(230, 206, 88, 0.05);
+        padding: 60px 0px;
+        margin-top: 100px;
+
+        color: $c-f-p;
+
+
+        .ant-row {
+            justify-content: space-between;
+
+            p {
+                font-size: 16px;
+                line-height: 30px;
+            }
+
+            ul {
+                margin-top: 50px;
+
+                li {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .sectionAboutDes2 {
+        margin-top: 40px;
+        position: relative;
+
+
+        &::after {
+            content: "";
+            background: url(/icons/iconbee2.png) no-repeat;
+
+            position: absolute;
+            background-size: 100% 100%;
+            left: 0;
+            bottom: -90px;
+            width: 137px;
+            height: 68px;
+
+
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+
+    .ServicesSupport {
+        margin-top: 280px;
+
+        .container_ {
+            position: relative;
+
+            &::before {
+                content: "";
+                background: url(/images/wave/PaymentPackages1.png) no-repeat;
+                width: 228px;
+                height: 199px;
+                position: absolute;
+                background-size: 100% 100%;
+                right: 29px;
+                top: -77px;
+
+            }
+        }
+
+        .sectionsHeader {
+            margin-bottom: 80px;
+            position: relative;
+
+            &::after {
+                content: "";
+                background: url(/images/wave/ServicesSupport1.jpg) no-repeat;
+                width: 48px;
+                height: 47px;
+                position: absolute;
+                background-size: 100% 100%;
+                left: 40px;
+            }
+
+        }
+
+        .ServicesItem {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: #FFFFFF;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            height: 245.54px;
+            justify-content: center;
+            transition: 1s;
+            
+
+            max-width: 350px;
+
+            &:hover {
+                box-shadow: 0px 4px 60px rgb(13 89 239 / 6%);
+                transform: scale(1.1);
+            }
+
+            h3 {
+                font-weight: 500;
+                font-size: 16px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 24px;
+            }
+
+            .image_ {
+                width: 50px;
+                height: 50px;
+                position: relative;
+                margin-bottom: 20px;
+            }
+        }
+
+        .ButtonsS1 {
+            button {
+                height: 48px;
+                min-width: 250px;
+                margin: auto;
+            }
+        }
+
+    }
+
+    .DownAppMobile_ {
+        margin: auto;
+
+        .secImg {
+            text-align: center;
+            margin-top: 50px;
+        }
+    }
+
+
+    @media (max-width:991px) {
+
+        .ServicesSupport {
+            .container_ {
+                &::before {
+                    content: none;
+                }
+            }
+
+            .ServicesItem{
+                margin-top: 30px;
+            }
+        }
+
+        .secSetting {
+
+            .ant-row {
+                flex-direction: column-reverse;
+            }
+
+            .Image {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

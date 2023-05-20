@@ -1,0 +1,36 @@
+@import 'variables';
+
+.SwiperS2 :global {
+
+    .swiper-pagination {
+        padding-top: 50px;
+        position: relative;
+    }
+
+    .swiper-pagination-bullet {
+        width: 20.94px;
+        height: 20px;
+        margin: 0px 6px !important;
+        background: rgba(32, 192, 176, 0.5);
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #20C0B0;
+
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    .item {
+        h4 {
+            font-weight: 600;
+            font-size: 24px;
+            text-align: center;
+            margin: 16px 0px;
+            color: $c-f-p;
+        }
+    }
+}
